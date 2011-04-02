@@ -526,6 +526,28 @@ Example:
          Points := MSI_ConvertTilePath(Tiles);
          MinDistance := 25;
        end;
+
+     LOC_DRD_COAL:
+       with MSI_Locations[Which] do
+       begin
+         Name := 'Dwarven Resouce Dungeon Coal';
+         Constant := LOC_DRD_COAL;
+         AtBank := False;
+         Tiles := [Point(1065, 4574)];
+         Points := MSI_ConvertTilePath(Tiles);
+         MinDistance :=20;
+       end;
+
+     LOC_DRD_DBOX:
+       with MSI_Locations[Which] do
+       begin
+         Name := 'Dwarven Resouce Dungeon DBox';
+         Constant := LOC_DRD_DBOX;
+         AtBank := True;
+         Tiles := [Point(1043, 4578)];
+         Points := MSI_ConvertTilePath(Tiles);
+         MinDistance := 10;
+       end;
    end;
 
    Result := (MSI_Locations[Which].Name <> '');

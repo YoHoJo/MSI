@@ -194,7 +194,7 @@ Begin
     MSI_FindRandoms(False);
     MSI_AntiBan(RandomRange(0, 5000), ANTI_BAN_CHANCE);
 
-    { Check if the tree Exists }
+    // Check if the tree Exists
     if (Debug) then
       MSI_Debug('Looking for tree');
 
@@ -248,7 +248,7 @@ Begin
       if MSI_FindBirdNest then
         Break;
 
-    { InvCount check }
+    // InvCount check
     if (Debug) then
       MSI_Debug('Checking inventory count');
 
@@ -262,7 +262,7 @@ Begin
       T := (GetSystemTime + MSI_Objects[TreeID].MaxTime + Random(5000));
     End;
 
-    { Prevent logout }
+    // Prevent logout
     If ((TotalChopTime - GetSystemTime) < 60000) Then
     Begin
       if (Debug) then

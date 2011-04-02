@@ -121,6 +121,7 @@ const
   SCRIPT_RM_GOLD     = 40;
   SCRIPT_GUILD_MINER = 41; // SRL Members+ only
   SCRIPT_DB_CLAY     = 42;
+  SCRIPT_DRD_COAL    = 43;
 
   // Fishing
   SCRIPT_POWER_FISHER  = 50;
@@ -288,10 +289,15 @@ const
   LOC_KJ_FISH   = 123;
 
   // Catherby
-  LOC_CB_BANK = 130;
+  LOC_CB_BANK   = 130;
   LOC_CB_FISH   = 131;
 
-  LOC_ARRAY_LENGTH = 131; // Change to the highest location constant
+
+  //Resouce Dungeons
+  LOC_DRD_COAL  = 136;
+  LOC_DRD_DBOX  = 137;
+
+  LOC_ARRAY_LENGTH = 137; // Change to the highest location constant
 
 (*
 Requirement Constants
@@ -479,7 +485,8 @@ const
   MSI_BANK_AK = 37;
   MSI_BANK_CB = 38;
 
-  DBOX_PS = 40;
+  DBOX_PS  = 40;
+  DBOX_DRD = 41;
 
   // Fishing spots
   FISHSPOT_NET     = 50;

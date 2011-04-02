@@ -371,6 +371,30 @@ begin
          BadColorTolerance  := 10;
        end;
 
+     DBOX_DRD:
+       with MSI_Objects[whichObject] do
+       begin
+         Name               := 'Dwarven Resource Dungeon Deposit Box';
+         UpText             := 'eposit';
+         Option             := 'it Bank';
+         Colors             := [6850715];
+         Tol                := 5;
+         Hue                := 0.12;
+         Sat                := 0.57;
+         FindAllColors      := False;
+         W                  := 30;
+         H                  := 60;
+         Accuracy           := 20;
+         SearchArea         := MSBox;
+         ExcludeSelf        := True;
+         RightClickOnly     := False;
+         Tries              := 15;
+         Anim               := False;
+         WaitToMove         := False;
+         BadColors          := [];
+         BadColorTolerance  := 10;
+       end;
+
     MSI_BANK_SV:
       with MSI_Objects[whichObject] do
       begin
